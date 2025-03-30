@@ -2,9 +2,14 @@
 @plugin "daisyui";
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100vw;
+  margin-top: 10vh;
+  height:90vh;
   text-align: center;
+  padding:3vh;
+  background-image: url('https://st.depositphotos.com/2124935/2388/v/450/depositphotos_23886793-stock-illustration-black-and-silver-vintage-wallpaper.jpg');
+
 }
+
+
 
