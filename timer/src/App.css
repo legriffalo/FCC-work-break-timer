@@ -1,7 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-#root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root  {
   max-width: 100vw;
   margin-top: 10vh;
   height:90vh;
@@ -11,5 +15,7 @@
 
 }
 
-
+html {
+  font-size: 17px
+}
 

@@ -8,23 +8,23 @@ import { faRefresh } from '@fortawesome/free-solid-svg-icons';
 
 interface ControlsProps {
     style?:string;
+    handler?:any;
   }
   
 
 
-const Controls: React.FC<ControlsProps> = ({style}) => {
+const Controls: React.FC<ControlsProps> = ({style, handler}) => {
   return (
     <div className = {style}>
         
-        <div className="btn">
-        <FontAwesomeIcon icon={ faPlay } />        
+        <div className="btn" id = "start_stop" onClick = {()=>handler("playpause")}>
+        <FontAwesomeIcon icon={ faPlay } />
+        <FontAwesomeIcon icon={faPause} />        
+        
         </div>
 
-        <div className="btn">
-        <FontAwesomeIcon icon={faPause} />        
-        </div>    
 
-        <div className="btn">
+        <div className="btn" id = "reset" onClick = {()=>handler("reset")}>
         <FontAwesomeIcon icon={faRefresh} />        
         </div>  
     

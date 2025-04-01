@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface HeaderProps {
     title:string;
   }
@@ -6,7 +8,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({title}) => {
   return (
-    <div className = "fixed left-0 top-0 h-[10vh] footer flex flex-row justify-center text-3xl font-sans font-[700] sm:footer-horizontal bg-neutral text-neutral-content p-3 ">
+    <div className = "text-3xl fixed left-0 top-0 h-1/10 flex flex-row justify-center items-center footer font-sans font-bold bg-neutral text-neutral-content p-3 ">
         <h1> {title} </h1>
     </div>
 
