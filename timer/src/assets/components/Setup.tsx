@@ -21,7 +21,7 @@ const SetUp: React.FC<SetUpProps> = ({info,style, length, handler,id}) => {
         <FontAwesomeIcon icon={ faArrowUp } />        
         </div>
 
-        <p className ="text-2xl" id = {id}>{info}: <span id = {`${info.toLowerCase()}-length`}>{length}</span>  </p>
+        <p className ="text-sm md:text-2xl" id = {id}>{info}: <span id = {`${info.toLowerCase()}-length`}>{length}</span>  </p>
 
 
         <div className="btn btn-circle" id = {`${info.toLowerCase()}-decrement`} onClick={()=> handler("down", id)}>

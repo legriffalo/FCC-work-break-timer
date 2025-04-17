@@ -155,13 +155,13 @@ const playSound = () => {
     <>
       <Header title = "Break Timer"></Header>
 
-      <div className='w-8/10 m-auto border-3 bg-[#333333] rounded-3xl p-5 text-white'>
-        <div className='w-9/10 h-[20vh] m-auto flex flex-row justify-center gap-5'>
+      <div className='w-199/200 m-auto border-3 bg-[#333333] rounded-3xl p-2 text-white'>
+        <div className='w-59/60 h-[20vh] m-auto flex flex-row justify-center gap-3'>
 
           <SetUp 
             id = "break-label"
            info = "Break" 
-           style = "w-9/20 flex flex-col  justify-center items-center border bg-blue-200 rounded-xl gap-2 p-2" 
+           style = "w-9/20 text-white flex flex-col justify-center items-center border bg-blue-300 rounded-xl gap-2 p-1" 
            length={settings.breakLength} 
            handler = {handleSettings}>
           </SetUp>
@@ -169,7 +169,7 @@ const playSound = () => {
           <SetUp 
             id = "session-label"
             info = "Session" 
-            style = "w-9/20 text-white flex flex-col justify-center items-center border bg-blue-600 rounded-xl gap-2 p-2" 
+            style = "w-9/20 text-white flex flex-col justify-center items-center border bg-blue-600 rounded-xl gap-2 p-1" 
             length={settings.sessionLength} 
             handler = {handleSettings}>
           </SetUp>
